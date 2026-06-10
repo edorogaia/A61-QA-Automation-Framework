@@ -20,3 +20,9 @@ test {
         suites "src/test/resources/TestNG.xml"
     }
 }
+
+task testRegressioTest(type: Test) {
+    useTestNG() {
+        suites "src/test/resourses/Regression.xml"
+    }
+}
