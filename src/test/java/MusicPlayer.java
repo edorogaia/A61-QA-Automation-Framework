@@ -9,5 +9,6 @@ public class MusicPlayer {
     }
 
     public byte[] getCurrentSong() {
+        return null;
     }
 }

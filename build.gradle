@@ -21,7 +21,12 @@ test {
     }
 }
 
-task testRegressioTest(type: Test) {
+task testSmoke(type: Test) {
+    useTestNG() {
+        "src/test/resourses/Smoke.xml"
+    }
+}
+task testRegressionTest(type: Test) {
     useTestNG() {
         suites "src/test/resourses/Regression.xml"
     }
