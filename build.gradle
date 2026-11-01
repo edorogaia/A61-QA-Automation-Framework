@@ -17,6 +17,11 @@ dependencies {
 
 test {
     useTestNG() {
+<<<<<<< Updated upstream
         suites "src/test/resources/TestNG.xml"
+=======
+        suites "src/test/resources/${suite}.xml"
+        systemProperty "browser", System.getProperty("browser");
+>>>>>>> Stashed changes
     }
 }
